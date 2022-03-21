@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thực hành</title>
+</head>
+<body>
+<script>
+    let a = confirm("đấm nhau không?");
+    let b = processConfirm(a);
+    function processConfirm(answer) {
+        let result = "";
+        if (answer) {
+            result = "khá lắm con trai của ta";
+        } else {
+            result = "íu đúi";
+        }
+        return result;
+    }
+    alert(b);
+
+</script>
+</body>
+</html>

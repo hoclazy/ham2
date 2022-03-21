@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển đổi feet và metter</title>
+</head>
+<body>
+<h1>chuyển đổi feet và metter</h1>
+<p>
+    <label>Feet</label>
+    <input id="inputFeet" type="number" placeholder="Feet"
+           oninput="t(this.value)"
+           onchange="t(this.value)">
+</p>
+<p>metter: <span id="outputmetter"></span></p>
+<script>
+    function t(n) {
+        n = parseFloat(n);
+        document.getElementById("outputmetter").innerHTML = (n * 3.279);
+    }
+</script>
+</body>
+</html>

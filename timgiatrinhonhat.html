@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm giá trị nhỏ nhất</title>
+</head>
+<body>
+<script>
+    function nhonhat(a) {
+        let min = a[0];
+        for ( let i = 0; i<a.length;i++) {
+            if (a[i] <min) {
+                min = a[i];
+            }
+        }
+        return min;
+    }
+    let min1 = nhonhat([-7,5,1,8,-3,7,8]);
+    document.write('giá trị nhỏ nhất mảng a1:' +min1 +'<br>');
+
+
+    let a2 = [3,5,1,8,-5,7,8];
+    let min2 = nhonhat(a2);
+    document.write('giá trị nhỏ nhất mảng a2:' +min2);
+
+
+
+</script>
+</body>
+</html>

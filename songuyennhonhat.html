@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>số nguyên nhỏ nhất</title>
+</head>
+<body>
+<script>
+    function kiemtra(a1,a2,a3) {
+        let min = a1;
+        if(min>a2){
+            min = a2;
+        }
+        if(min>a3){
+            min = a3;
+        }
+    return min;
+    }
+    let a1 = +prompt('số thứ nhất: ');
+    let a2 = +prompt('số thứ hai: ');
+    let a3 = +prompt('số thứ ba: ');
+    alert(kiemtra(a1,a2,a3));
+</script>
+</body>
+</html>
